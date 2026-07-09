@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Set of Playing Cards</title>
+
+    <style>
+        body {
+            background-color: darkgreen;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f5f5f5;
+            margin-bottom: 30px;
+        }
+
+        #playing-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 120px;
+            height: 170px;
+            background-color: #fffdf7;
+            border-radius: 10px;
+            box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .card.red-suit {
+            color: red;
+        }
+
+        .card.black-suit {
+            color: black;
+        }
+
+        .left,
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .right {
+            transform: rotate(180deg);
+        }
+
+        .middle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>This is a page of playing cards</h1>
+
+    <main id="playing-cards">
+
+        <div class="card red-suit">
+            <div class="left">
+                A<br>♥
+            </div>
+
+            <div class="middle">
+                ♥
+            </div>
+
+            <div class="right">
+                A<br>♥
+            </div>
+        </div>
+
+        <div class="card black-suit">
+            <div class="left">
+                K<br>♠
+            </div>
+
+            <div class="middle">
+                ♠
+            </div>
+
+            <div class="right">
+                K<br>♠
+            </div>
+        </div>
+
+        <div class="card red-suit">
+            <div class="left">
+                5<br>♦
+            </div>
+
+            <div class="middle">
+                ♦
+            </div>
+
+            <div class="right">
+                5<br>♦
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
